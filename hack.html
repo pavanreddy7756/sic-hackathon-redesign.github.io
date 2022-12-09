@@ -1,0 +1,1343 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap CSS -->
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <!-- JavaScript Bundle with Popper -->
+
+
+    <title>SIC</title>
+    <title>  Student Internship Club GITAM</title>
+
+    <!-- START OF STYLING!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+    <style>
+      /* new footer styling */
+      body {
+        font-family: "Prompt", sans-serif;
+      }
+      .deneb_footer .widget_wrapper {
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-top: 200px;
+        padding-bottom: 70px;
+      }
+      @media (max-width: 767px) {
+        .deneb_footer .widget_wrapper .widget {
+          margin-bottom: 40px;
+        }
+      }
+      .deneb_footer .widget_wrapper .widget .widget_title {
+        margin-bottom: 30px;
+      }
+      .deneb_footer .widget_wrapper .widget .widget_title h4 {
+        font-weight: bold;
+      }
+      .deneb_footer .widget_wrapper .widget .widget_title h4:after {
+        content: "";
+        display: block;
+        background: url(../images/shape/line.png) no-repeat;
+        max-width: 38px;
+        height: 2px;
+        margin-top: 5px;
+      }
+      .deneb_footer .widget_wrapper .widegt_about p {
+        margin-bottom: 20px;
+      }
+      .deneb_footer .widget_wrapper .widegt_about .social li {
+        display: inline-block;
+        margin-right: 10px;
+      }
+      .deneb_footer .widget_wrapper .widegt_about .social li a {
+        display: block;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        border-radius: 50%;
+        background-color: #f9e6d4;
+        color: #0d6efd;
+        font-size: 14px;
+        -webkit-transition: all all 0.5s ease-out 0s;
+        -moz-transition: all all 0.5s ease-out 0s;
+        -ms-transition: all all 0.5s ease-out 0s;
+        -o-transition: all all 0.5s ease-out 0s;
+        transition: all all 0.5s ease-out 0s;
+      }
+      .deneb_footer .widget_wrapper .widegt_about .social li a:hover,
+      .deneb_footer .widget_wrapper .widegt_about .social li a:focus {
+        background-image: -moz-linear-gradient(0deg, #ffbd27 0%, #feb000 100%);
+        background-image: -webkit-linear-gradient(
+          0deg,
+          #ffbd27 0%,
+          #feb000 100%
+        );
+        background-image: -ms-linear-gradient(0deg, #ffbd27 0%, #feb000 100%);
+        color: #fff;
+        box-shadow: 2.5px 4.33px 15px 0px rgba(254, 176, 0, 0.4);
+      }
+      .deneb_footer .widget_wrapper .widget_link ul li {
+        margin-bottom: 5px;
+        list-style: none;
+        font-weight: bold;
+      }
+      .deneb_footer .widget_wrapper .widget_link ul li a {
+        text-transform: capitalize;
+        color: #7a808d;
+        text-decoration: none;
+      }
+      .deneb_footer .widget_wrapper .widget_link ul li a:hover,
+      .deneb_footer .widget_wrapper .widget_link ul li a:focus {
+        color: #feb000;
+      }
+      .single_info {
+        font-weight: bold;
+      }
+      .deneb_footer .widget_wrapper .widget_contact .contact_info .single_info {
+        max-width: 250px;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+      }
+      .deneb_footer
+        .widget_wrapper
+        .widget_contact
+        .contact_info
+        .single_info
+        .icon {
+        font-size: 12px;
+        color: #0d6efd;
+        margin-right: 10px;
+      }
+      .deneb_footer
+        .widget_wrapper
+        .widget_contact
+        .contact_info
+        .single_info
+        .info
+        p
+        a {
+        color: #7a808d;
+        text-decoration: none;
+      }
+      .deneb_footer
+        .widget_wrapper
+        .widget_contact
+        .contact_info
+        .single_info
+        .info
+        p
+        span {
+        display: block;
+      }
+
+      .deneb_footer .copyright_area {
+        background: #edecf0;
+        padding: 10px 0;
+      }
+      .deneb_footer .copyright_area .copyright_text {
+        text-align: center;
+      }
+      .deneb_footer .copyright_area .copyright_text p {
+        color: #011a3e;
+      }
+      .deneb_footer .copyright_area .copyright_text p span {
+        color: #feb000;
+      }
+      .deneb_cta .cta_wrapper {
+        padding: 45px 50px 42px;
+        max-width: 970px;
+        border-radius: 15px;
+        margin: auto;
+        margin-bottom: -135px;
+        position: relative;
+        background-color:#FEDB39;
+        /* background-image: linear-gradient(90deg, #00dbde 0%, #fc00ff 100%); */
+        box-shadow: 2.5px 4.33px 15px 0px rgba(111, 185, 246, 0.4);
+        z-index: 1;
+      }
+      .deneb_cta .cta_wrapper:after {
+        content: "";
+        background: url(../images/shape/cta_shape.png) no-repeat;
+        background-position: bottom;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+      }
+      .deneb_cta .cta_wrapper .cta_content h3 {
+        color: #212529;
+        font-weight: bold;
+      }
+      .joinusbutton {
+        background-color: #edecf0;
+        color: #011a3e;
+      }
+
+      @media (max-width: 767px) {
+        .deneb_cta .cta_wrapper .cta_content h3 {
+          font-size: 24px;
+        }
+      }
+      .deneb_cta .cta_wrapper .cta_content h3:after {
+        content: "";
+        display: block;
+        background: url(../images/shape/line_2.png) no-repeat;
+        max-width: 110px;
+        height: 2px;
+        margin-top: 13px;
+        margin-bottom: 24px;
+      }
+      .deneb_cta .cta_wrapper .cta_content p {
+        color: #fff;
+      }
+      .deneb_cta .cta_wrapper .button_box {
+        float: right;
+      }
+      @media only screen and (min-width: 768px) and (max-width: 991px) {
+        .deneb_cta .cta_wrapper .button_box {
+          float: none;
+          text-align: left;
+          margin-top: 30px;
+        }
+      }
+      @media (max-width: 767px) {
+        .deneb_cta .cta_wrapper .button_box {
+          float: none;
+          text-align: center;
+          margin-top: 30px;
+        }
+        .suggestions {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+        #newsletter1 {
+          height: 40px;
+          opacity: 0.9;
+        }
+      }
+      .deneb_cta .cta_wrapper .button_box .deneb_btn {
+        background: #fff;
+        color: #011a3e;
+      }
+      .deneb_cta .cta_wrapper .button_box .deneb_btn:hover,
+      .deneb_cta .cta_wrapper .button_box .deneb_btn:focus {
+        box-shadow: 2.5px 4.33px 15px 0px rgba(0, 0, 0, 0.15);
+      }
+
+      /* new navbar styling  */
+      .profile-menu .dropdown-menu {
+        right: 0;
+        left: unset;
+        text-align: center;
+        background-color: rgba(218, 165, 32, 0.65);
+      }
+      .profile-menu .fa-fw {
+        margin-right: 10px;
+      }
+
+      .toggle-change::after {
+        border-top: 0;
+        border-bottom: 0.3em solid;
+      }
+      .logo-image {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-top: 0px;
+        margin-left: 2%;
+      }
+      .navbar-brand {
+        padding-top: 0.3125rem;
+        padding-bottom: 0.3125rem;
+        margin-right: 0.7%;
+        margin-left: 1%;
+        font-size: 1.25rem;
+        text-decoration: none;
+        white-space: nowrap;
+        
+      }
+      
+      .deneb_footer .widget_wrapper {
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-top: 200px;
+        padding-bottom: 5px;
+      }
+      /* adds golden color to nav links when hovered on them */
+      #navbarSupportedContent
+        > ul.navbar-nav.me-auto.mb-2.mb-lg-0
+        > li
+        > a:hover {
+        color: goldenrod;
+      }
+      body {
+    background: #161623;
+    
+  }
+
+  .card {
+  /* width: 300px;
+  overflow: hidden;
+  margin: 15px;
+  box-shadow: 0 0 20px -5px rgba(0, 0, 0, 0.25);
+  padding: 20px 0;
+  padding-top: 0;
+  border-radius: 5px;
+  transition: all 0.5s;
+  cursor: pointer;
+  background-color: #ffffff;
+  color: black;
+  transform: translateZ(0px); */
+    position: relative;
+    width: 280px;
+    height: 400px;
+    margin: 30px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+  }
+
+  .btn {
+    border: 5px solid;
+    border-image-slice: 1;
+    background: #e0c3fc;
+    text-decoration: none;
+    transition: all 0.4s ease;
+  }
+
+  h1 {
+    color:white;
+    text-align: center;
+    margin: 3rem;
+    font-weight: bolder;
+    font-size: xx-large;
+  }
+  h5{
+    background-color: inherit;
+    padding: 10px;
+    margin: 0;
+    z-index: 2;
+    position: relative;
+  }
+  .card-title {
+    color: white;
+    font-weight: bold;
+  }
+  .card-custom-avatar img {
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba(10, 10, 10, 0.3);
+    position: absolute;
+    top: 110px;
+    right: 1rem;
+    width: 90px;
+    height: 90px;
+  }
+  .card-img-top{
+    max-height: 150px;
+    width: 100%;
+    transform: scale(1.1);
+    transition: transform 0.5s;
+    z-index: 1;
+    position: relative;
+  }
+  p {
+    padding: 0 10px;
+    margin: 0;
+    color: darkslategray;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px) translateZ(0px);
+    box-shadow: 0 15px 20px 5px rgba(0, 0, 0, 0.15);
+  }
+  .cta_wrapper:after{
+    background-color:black;
+  }
+  .card-body{
+    overflow: scroll;
+    overflow-x: hidden;
+    
+  }
+  /* Hide scrollbar for Chrome, Safari and Opera */
+.card-body::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.card-body {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+.card-title:hover{
+  color: #fedb39;
+}
+
+.waviy {
+  position: relative;
+  -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
+  font-size: 2rem;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+
+}
+.waviy span {
+  font-family: 'Alfa Slab One', cursive;
+  position: relative;
+  display: inline-block;
+  color: #fff;
+  text-transform: uppercase;
+  animation: waviy 3s infinite;
+  animation-delay: calc(.2s * var(--i));
+  align-items: center;
+justify-content: center;
+  
+}
+@keyframes waviy {
+  0%,40%,100% {
+    transform: translateY(0)
+  }
+  20% {
+    transform: translateY(-10px)
+  }
+}
+
+
+  </style>
+  <!-- END OF STYLING!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+  </head>
+  <link rel="icon" type="image/x-icon" href="{% static 'images/logo2.png' %}" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <div class="logo-image">
+          <img src="{% static 'images/finallogo.png' %}" class="img-fluid" />
+        </div>
+        <a class="navbar-brand" style="color: #fedb39;" href="{% url 'page-about' %}">Student Internship Club X GCGC</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                aria-current="page"
+                href="{% url 'page-about' %}"
+                >About Us</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'page-internships' %}"
+                >Internships</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'page-careerful' %}"
+                >Career-Fulfillment</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'page-scholarships' %}"
+                >Scholarships</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'page-fellowships' %}"
+                >Fellowships</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'page-hackathons' %}"
+                >Hackathons</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'events' %}">Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'archives' %}">Archives</a>
+            </li>
+
+            <!--            <li class="nav-item dropdown">-->
+            <!--              <a-->
+            <!--                class="nav-link dropdown-toggle"-->
+            <!--                href="#"-->
+            <!--                id="navbarDropdown"-->
+            <!--                role="button"-->
+            <!--                data-bs-toggle="dropdown"-->
+            <!--                aria-expanded="false"-->
+            <!--              >-->
+            <!--                Misc.-->
+            <!--              </a>-->
+            <!--              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">-->
+            <!--                <li><a class="dropdown-item" href="#">Archives</a></li>-->
+            <!--                <li><a class="dropdown-item" href="#">Statistics</a></li>-->
+            <!--                <li><hr class="dropdown-divider" /></li>-->
+            <!--                <li>-->
+            <!--                  <a class="dropdown-item" href="#">Fellowships</a>-->
+            <!--                </li>-->
+            <!--              </ul>-->
+            <!--            </li>-->
+          </ul>
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 profile-menu">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i class="fa fa-user"></i>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                {% if user.is_authenticated %}
+                <li>
+                  <a class="dropdown-item" href="#"
+                    ><i class="fas fa-sign-out-alt fa-fw"></i> {{ user.username }}</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li class="nav-item">
+              <a class="dropdown-item" href="{% url 'stats' %}"
+                ><i class="fas fa-database"></i> Demographics</a
+              >
+            </li>
+                <li>
+                  <a class="dropdown-item" href="{% url 'logout' %}"
+                    ><i class="fas fa-sign-out-alt fa-fw"></i> Log Out</a
+                  >
+                </li>
+                {% else %}
+                <li>
+                  <a class="dropdown-item" href="{% url 'login' %}"
+                    ><i class="fas fa-sliders-h fa-fw"></i> Login</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="{% url 'register' %}"
+                    ><i class="fa fa-cog fa-fw"></i> Register</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'stats' %}">Demographics</a>
+                </li>
+                {% endif %}
+                <li style="text-align: center">
+                  <a
+                    style="color: #000000; text-decoration: none"
+                    href="{% url 'contact-us' %}"
+                    >Contact Us</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container mx-auto mt-4">
+      <div class="bubble bubble_one"></div>
+      <div class="bubble bubble_two"></div>
+      <div class="bubble bubble_three"></div>
+      <div class="bubble bubble_four"></div>
+  <!-- <h1 class="wavely">Hackathons🚀</h1> -->
+  <div class="waviy">
+    <span style="--i:1">H</span>
+    <span style="--i:2">A</span>
+    <span style="--i:3">C</span>
+    <span style="--i:4">K</span>
+    <span style="--i:5">A</span>
+    <span style="--i:6">T</span>
+    <span style="--i:7">H</span>
+    <span style="--i:8">O</span>
+    <span style="--i:9">N</span>
+    <span style="--i:10">S</span>
+    <span style="--i:11">🚀</span>
+   </div>
+  <div class="row">
+    {% for post in hackathons %}
+    <div class="col-md-4">
+      <div class="card" style="width: 18rem; height: 30rem;">
+        <img
+          src="https://images.unsplash.com/photo-1638202677704-b74690bb8fa9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aGFja2F0aG9ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+          class="card-img-top top-image-hov"
+          alt="..."
+          
+        />
+        <div class="card-body">
+          <!-- <h5 class="card-title">{{ post.name }}</h5> -->
+          <a href="{{ post.application_link }}" style="text-decoration: none;"><h5 class="card-title">{{ post.name }}</h5></a>
+          <h6 class="card-subtitle mb-2 text-muted">{{ post.hosted_by }}</h6>
+          <p class="card-text">Topics: {{ post.topics }}</p>
+          <p class="card-text">Prize: {{ post.prize_money_description }}</p>
+          <p class="card-text">Start Date:<b> {{ post.start_date }}</b></p>
+          <p class="card-text">End Date: <b>{{ post.end_date }}</b></p>
+
+          <!-- <a href="{{ post.application_link }}" class="btn mr-2"
+            ><i class="fa fa-link"></i> Visit Site</a
+          > -->
+          <!-- <a href="#" class="btn"
+            ><i class="fa fa-mouse-pointer"></i> Register</a
+          > -->
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+    <!-- new footer -->
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+
+    <section class="deneb_cta">
+      <div class="container">
+        <div class="cta_wrapper">
+          <div class="row align-items-center">
+            <div class="col-lg-7">
+              <div class="cta_content">
+                <h3>Any Suggestions ?</h3>
+                <!-- <p>
+                  Curabitur libero eros, efficitur sit amet sodales tincidunt,
+                  aliquet et leo sed ut nibh feugiat, auctor enim quis.
+                </p> -->
+                <form action="{% url 'page-suggestions' %}" method="POST">
+                  <div class="d-flex w-100 gap-2 suggestions">
+                    <label for="newsletter1" class="visually-hidden"
+                      >suggestion</label
+                    >
+                    <input
+                      id="newsletter1"
+                      type="text"
+                      class="form-control"
+                      placeholder="E.g: Competitive Exams section can also be included"
+                      name="suggestion"
+                    />
+                    <button class="btn button_box" type="submit">
+                      <i class="fa fa-telegram fa-2x"></i>
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="col-lg-5">
+              <div class="button_box">
+                <a href="#" class="btn joinusbutton">Join Us</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="deneb_footer">
+      <div
+        class="widget_wrapper"
+        style="
+          background-image: url(http://demo.tortoizthemes.com/deneb-html/deneb-ltr/assets/images/footer_bg.png);
+        "
+      >
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 col-12">
+              <div class="widget widegt_about">
+                <p>“Nothing is more expensive than a missed opportunity”</p>
+                <ul class="social">
+                  <li>
+                    <a href="https://summerinterns_sig@gitam.in"
+                      ><i class="fa fa-envelope"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://linkedin.com/company/student-internship-club-gitam"
+                      ><i class="fa fa-linkedin"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="https://instagram.com/student_internship_club"
+                      ><i class="fa fa-instagram"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.youtube.com/channel/UCDNjxFQCwZG5TQh9Dr6NsPg"
+                      ><i class="fa fa-youtube-play"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <img
+                  src="{% static 'images/gitamlogo.png' %}"
+                  class="img-fluid"
+                  style="margin-top: 16px; width: 60%"
+                />
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="widget widget_link">
+                <div class="widget_title">
+                  <h4>All Website Links</h4>
+                </div>
+                <ul>
+                  <!-- <li><a href="#">About Us</a></li> -->
+                  <li><a href="#">Internships</a></li>
+                  <li><a href="#">Scholarships</a></li>
+                  <li><a href="#">Fellowships</a></li>
+                  <li><a href="#">Hackathons</a></li>
+                  <!-- <li><a href="#">Contact Us</a></li> -->
+                  <!-- <li><a href="#">Archives</a></li> -->
+                  <!-- <li><a href="#">Statistics</a></li> -->
+                  <li><a href="#">Events</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="widget widget_contact">
+                <div class="widget_title">
+                  <h4>Contact Us</h4>
+                </div>
+                <div class="contact_info">
+                  <!-- <div class="single_info">
+                    <div class="icon">
+                      <i class="fa fa-whatsapp fa-3x"></i>
+                    </div>
+                    <div class="info">
+                      <p><a href="tel:+919246147999">1800-121-3637</a></p>
+                    </div>
+                  </div> -->
+                  <div class="single_info">
+                    <div class="icon">
+                      <i class="fa fa-terminal fa-3x"></i>
+                    </div>
+                    <div class="info">
+                      <p>
+                        <a href="mailto:sicgitamvizag.com"
+                          >https://testsic.gitam.edu/</a
+                        >
+                      </p>
+                    </div>
+                  </div>
+                  <div class="single_info">
+                    <div class="icon">
+                      <i class="fa fa-location-arrow fa-3x"></i>
+                    </div>
+                    <div class="info">
+                      <p>
+                        Student Internship Club, <span>GCGC, </span
+                        ><span>Old Civil Bhavan 308</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright_area">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="copyright_text">
+                <p>
+                  Copyright &copy; 2022 Student Internship Club, GITAM Deemed To
+                  Be University, All rights reserved.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      //script for tilt effect of tiles
+      var VanillaTilt = (function () {
+'use strict';
+
+/**
+ * Created by Sergiu Șandor (micku7zu) on 1/27/2017.
+ * Original idea: https://github.com/gijsroge/tilt.js
+ * MIT License.
+ * Version 1.7.2
+ */
+
+class VanillaTilt {
+  constructor(element, settings = {}) {
+    if (!(element instanceof Node)) {
+      throw ("Can't initialize VanillaTilt because " + element + " is not a Node.");
+    }
+
+    this.width = null;
+    this.height = null;
+    this.clientWidth = null;
+    this.clientHeight = null;
+    this.left = null;
+    this.top = null;
+
+    // for Gyroscope sampling
+    this.gammazero = null;
+    this.betazero = null;
+    this.lastgammazero = null;
+    this.lastbetazero = null;
+
+    this.transitionTimeout = null;
+    this.updateCall = null;
+    this.event = null;
+
+    this.updateBind = this.update.bind(this);
+    this.resetBind = this.reset.bind(this);
+
+    this.element = element;
+    this.settings = this.extendSettings(settings);
+
+    this.reverse = this.settings.reverse ? -1 : 1;
+    this.glare = VanillaTilt.isSettingTrue(this.settings.glare);
+    this.glarePrerender = VanillaTilt.isSettingTrue(this.settings["glare-prerender"]);
+    this.fullPageListening = VanillaTilt.isSettingTrue(this.settings["full-page-listening"]);
+    this.gyroscope = VanillaTilt.isSettingTrue(this.settings.gyroscope);
+    this.gyroscopeSamples = this.settings.gyroscopeSamples;
+
+    this.elementListener = this.getElementListener();
+
+    if (this.glare) {
+      this.prepareGlare();
+    }
+
+    if (this.fullPageListening) {
+      this.updateClientSize();
+    }
+
+    this.addEventListeners();
+    this.reset();
+    this.updateInitialPosition();
+  }
+
+  static isSettingTrue(setting) {
+    return setting === "" || setting === true || setting === 1;
+  }
+
+  /**
+   * Method returns element what will be listen mouse events
+   * @return {Node}
+   */
+  getElementListener() {
+    if (this.fullPageListening) {
+      return window.document;
+    }
+
+    if (typeof this.settings["mouse-event-element"] === "string") {
+      const mouseEventElement = document.querySelector(this.settings["mouse-event-element"]);
+
+      if (mouseEventElement) {
+        return mouseEventElement;
+      }
+    }
+
+    if (this.settings["mouse-event-element"] instanceof Node) {
+      return this.settings["mouse-event-element"];
+    }
+
+    return this.element;
+  }
+
+  /**
+   * Method set listen methods for this.elementListener
+   * @return {Node}
+   */
+  addEventListeners() {
+    this.onMouseEnterBind = this.onMouseEnter.bind(this);
+    this.onMouseMoveBind = this.onMouseMove.bind(this);
+    this.onMouseLeaveBind = this.onMouseLeave.bind(this);
+    this.onWindowResizeBind = this.onWindowResize.bind(this);
+    this.onDeviceOrientationBind = this.onDeviceOrientation.bind(this);
+
+    this.elementListener.addEventListener("mouseenter", this.onMouseEnterBind);
+    this.elementListener.addEventListener("mouseleave", this.onMouseLeaveBind);
+    this.elementListener.addEventListener("mousemove", this.onMouseMoveBind);
+
+    if (this.glare || this.fullPageListening) {
+      window.addEventListener("resize", this.onWindowResizeBind);
+    }
+
+    if (this.gyroscope) {
+      window.addEventListener("deviceorientation", this.onDeviceOrientationBind);
+    }
+  }
+
+  /**
+   * Method remove event listeners from current this.elementListener
+   */
+  removeEventListeners() {
+    this.elementListener.removeEventListener("mouseenter", this.onMouseEnterBind);
+    this.elementListener.removeEventListener("mouseleave", this.onMouseLeaveBind);
+    this.elementListener.removeEventListener("mousemove", this.onMouseMoveBind);
+
+    if (this.gyroscope) {
+      window.removeEventListener("deviceorientation", this.onDeviceOrientationBind);
+    }
+
+    if (this.glare || this.fullPageListening) {
+      window.removeEventListener("resize", this.onWindowResizeBind);
+    }
+  }
+
+  destroy() {
+    clearTimeout(this.transitionTimeout);
+    if (this.updateCall !== null) {
+      cancelAnimationFrame(this.updateCall);
+    }
+
+    this.reset();
+
+    this.removeEventListeners();
+    this.element.vanillaTilt = null;
+    delete this.element.vanillaTilt;
+
+    this.element = null;
+  }
+
+  onDeviceOrientation(event) {
+    if (event.gamma === null || event.beta === null) {
+      return;
+    }
+
+    this.updateElementPosition();
+
+    if (this.gyroscopeSamples > 0) {
+      this.lastgammazero = this.gammazero;
+      this.lastbetazero = this.betazero;
+
+      if (this.gammazero === null) {
+        this.gammazero = event.gamma;
+        this.betazero = event.beta;
+      } else {
+        this.gammazero = (event.gamma + this.lastgammazero) / 2;
+        this.betazero = (event.beta + this.lastbetazero) / 2;
+      }
+
+      this.gyroscopeSamples -= 1;
+    }
+
+    const totalAngleX = this.settings.gyroscopeMaxAngleX - this.settings.gyroscopeMinAngleX;
+    const totalAngleY = this.settings.gyroscopeMaxAngleY - this.settings.gyroscopeMinAngleY;
+
+    const degreesPerPixelX = totalAngleX / this.width;
+    const degreesPerPixelY = totalAngleY / this.height;
+
+    const angleX = event.gamma - (this.settings.gyroscopeMinAngleX + this.gammazero);
+    const angleY = event.beta - (this.settings.gyroscopeMinAngleY + this.betazero);
+
+    const posX = angleX / degreesPerPixelX;
+    const posY = angleY / degreesPerPixelY;
+
+    if (this.updateCall !== null) {
+      cancelAnimationFrame(this.updateCall);
+    }
+
+    this.event = {
+      clientX: posX + this.left,
+      clientY: posY + this.top,
+    };
+
+    this.updateCall = requestAnimationFrame(this.updateBind);
+  }
+
+  onMouseEnter() {
+    this.updateElementPosition();
+    this.element.style.willChange = "transform";
+    this.setTransition();
+  }
+
+  onMouseMove(event) {
+    if (this.updateCall !== null) {
+      cancelAnimationFrame(this.updateCall);
+    }
+
+    this.event = event;
+    this.updateCall = requestAnimationFrame(this.updateBind);
+  }
+
+  onMouseLeave() {
+    this.setTransition();
+
+    if (this.settings.reset) {
+      requestAnimationFrame(this.resetBind);
+    }
+  }
+
+  reset() {
+    this.event = {
+      clientX: this.left + this.width / 2,
+      clientY: this.top + this.height / 2
+    };
+
+    if (this.element && this.element.style) {
+      this.element.style.transform = `perspective(${this.settings.perspective}px) ` +
+        `rotateX(0deg) ` +
+        `rotateY(0deg) ` +
+        `scale3d(1, 1, 1)`;
+    }
+
+    this.resetGlare();
+  }
+
+  resetGlare() {
+    if (this.glare) {
+      this.glareElement.style.transform = "rotate(180deg) translate(-50%, -50%)";
+      this.glareElement.style.opacity = "0";
+    }
+  }
+
+  updateInitialPosition() {
+    if (this.settings.startX === 0 && this.settings.startY === 0) {
+      return;
+    }
+
+    this.onMouseEnter();
+
+    if (this.fullPageListening) {
+      this.event = {
+        clientX: (this.settings.startX + this.settings.max) / (2 * this.settings.max) * this.clientWidth,
+        clientY: (this.settings.startY + this.settings.max) / (2 * this.settings.max) * this.clientHeight
+      };
+    } else {
+      this.event = {
+        clientX: this.left + ((this.settings.startX + this.settings.max) / (2 * this.settings.max) * this.width),
+        clientY: this.top + ((this.settings.startY + this.settings.max) / (2 * this.settings.max) * this.height)
+      };
+    }
+
+
+    let backupScale = this.settings.scale;
+    this.settings.scale = 1;
+    this.update();
+    this.settings.scale = backupScale;
+    this.resetGlare();
+  }
+
+  getValues() {
+    let x, y;
+
+    if (this.fullPageListening) {
+      x = this.event.clientX / this.clientWidth;
+      y = this.event.clientY / this.clientHeight;
+    } else {
+      x = (this.event.clientX - this.left) / this.width;
+      y = (this.event.clientY - this.top) / this.height;
+    }
+
+    x = Math.min(Math.max(x, 0), 1);
+    y = Math.min(Math.max(y, 0), 1);
+
+    let tiltX = (this.reverse * (this.settings.max - x * this.settings.max * 2)).toFixed(2);
+    let tiltY = (this.reverse * (y * this.settings.max * 2 - this.settings.max)).toFixed(2);
+    let angle = Math.atan2(this.event.clientX - (this.left + this.width / 2), -(this.event.clientY - (this.top + this.height / 2))) * (180 / Math.PI);
+
+    return {
+      tiltX: tiltX,
+      tiltY: tiltY,
+      percentageX: x * 100,
+      percentageY: y * 100,
+      angle: angle
+    };
+  }
+
+  updateElementPosition() {
+    let rect = this.element.getBoundingClientRect();
+
+    this.width = this.element.offsetWidth;
+    this.height = this.element.offsetHeight;
+    this.left = rect.left;
+    this.top = rect.top;
+  }
+
+  update() {
+    let values = this.getValues();
+
+    this.element.style.transform = "perspective(" + this.settings.perspective + "px) " +
+      "rotateX(" + (this.settings.axis === "x" ? 0 : values.tiltY) + "deg) " +
+      "rotateY(" + (this.settings.axis === "y" ? 0 : values.tiltX) + "deg) " +
+      "scale3d(" + this.settings.scale + ", " + this.settings.scale + ", " + this.settings.scale + ")";
+
+    if (this.glare) {
+      this.glareElement.style.transform = `rotate(${values.angle}deg) translate(-50%, -50%)`;
+      this.glareElement.style.opacity = `${values.percentageY * this.settings["max-glare"] / 100}`;
+    }
+
+    this.element.dispatchEvent(new CustomEvent("tiltChange", {
+      "detail": values
+    }));
+
+    this.updateCall = null;
+  }
+
+  /**
+   * Appends the glare element (if glarePrerender equals false)
+   * and sets the default style
+   */
+  prepareGlare() {
+    // If option pre-render is enabled we assume all html/css is present for an optimal glare effect.
+    if (!this.glarePrerender) {
+      // Create glare element
+      const jsTiltGlare = document.createElement("div");
+      jsTiltGlare.classList.add("js-tilt-glare");
+
+      const jsTiltGlareInner = document.createElement("div");
+      jsTiltGlareInner.classList.add("js-tilt-glare-inner");
+
+      jsTiltGlare.appendChild(jsTiltGlareInner);
+      this.element.appendChild(jsTiltGlare);
+    }
+
+    this.glareElementWrapper = this.element.querySelector(".js-tilt-glare");
+    this.glareElement = this.element.querySelector(".js-tilt-glare-inner");
+
+    if (this.glarePrerender) {
+      return;
+    }
+
+    Object.assign(this.glareElementWrapper.style, {
+      "position": "absolute",
+      "top": "0",
+      "left": "0",
+      "width": "100%",
+      "height": "100%",
+      "overflow": "hidden",
+      "pointer-events": "none"
+    });
+
+    Object.assign(this.glareElement.style, {
+      "position": "absolute",
+      "top": "50%",
+      "left": "50%",
+      "pointer-events": "none",
+      "background-image": `linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%)`,
+      "transform": "rotate(180deg) translate(-50%, -50%)",
+      "transform-origin": "0% 0%",
+      "opacity": "0",
+    });
+
+    this.updateGlareSize();
+  }
+
+  updateGlareSize() {
+    if (this.glare) {
+      const glareSize = (this.element.offsetWidth > this.element.offsetHeight ? this.element.offsetWidth : this.element.offsetHeight) * 2;
+
+      Object.assign(this.glareElement.style, {
+        "width": `${glareSize}px`,
+        "height": `${glareSize}px`,
+      });
+    }
+  }
+
+  updateClientSize() {
+    this.clientWidth = window.innerWidth
+      || document.documentElement.clientWidth
+      || document.body.clientWidth;
+
+    this.clientHeight = window.innerHeight
+      || document.documentElement.clientHeight
+      || document.body.clientHeight;
+  }
+
+  onWindowResize() {
+    this.updateGlareSize();
+    this.updateClientSize();
+  }
+
+  setTransition() {
+    clearTimeout(this.transitionTimeout);
+    this.element.style.transition = this.settings.speed + "ms " + this.settings.easing;
+    if (this.glare) this.glareElement.style.transition = `opacity ${this.settings.speed}ms ${this.settings.easing}`;
+
+    this.transitionTimeout = setTimeout(() => {
+      this.element.style.transition = "";
+      if (this.glare) {
+        this.glareElement.style.transition = "";
+      }
+    }, this.settings.speed);
+
+  }
+
+  /**
+   * Method return patched settings of instance
+   * @param {boolean} settings.reverse - reverse the tilt direction
+   * @param {number} settings.max - max tilt rotation (degrees)
+   * @param {startX} settings.startX - the starting tilt on the X axis, in degrees. Default: 0
+   * @param {startY} settings.startY - the starting tilt on the Y axis, in degrees. Default: 0
+   * @param {number} settings.perspective - Transform perspective, the lower the more extreme the tilt gets
+   * @param {string} settings.easing - Easing on enter/exit
+   * @param {number} settings.scale - 2 = 200%, 1.5 = 150%, etc..
+   * @param {number} settings.speed - Speed of the enter/exit transition
+   * @param {boolean} settings.transition - Set a transition on enter/exit
+   * @param {string|null} settings.axis - What axis should be disabled. Can be X or Y
+   * @param {boolean} settings.glare - What axis should be disabled. Can be X or Y
+   * @param {number} settings.max-glare - the maximum "glare" opacity (1 = 100%, 0.5 = 50%)
+   * @param {boolean} settings.glare-prerender - false = VanillaTilt creates the glare elements for you, otherwise
+   * @param {boolean} settings.full-page-listening - If true, parallax effect will listen to mouse move events on the whole document, not only the selected element
+   * @param {string|object} settings.mouse-event-element - String selector or link to HTML-element what will be listen mouse events
+   * @param {boolean} settings.reset - false = If the tilt effect has to be reset on exit
+   * @param {gyroscope} settings.gyroscope - Enable tilting by deviceorientation events
+   * @param {gyroscopeSensitivity} settings.gyroscopeSensitivity - Between 0 and 1 - The angle at which max tilt position is reached. 1 = 90deg, 0.5 = 45deg, etc..
+   * @param {gyroscopeSamples} settings.gyroscopeSamples - How many gyroscope moves to decide the starting position.
+   */
+  extendSettings(settings) {
+    let defaultSettings = {
+      reverse: false,
+      max: 15,
+      startX: 0,
+      startY: 0,
+      perspective: 1000,
+      easing: "cubic-bezier(.03,.98,.52,.99)",
+      scale: 1,
+      speed: 300,
+      transition: true,
+      axis: null,
+      glare: false,
+      "max-glare": 1,
+      "glare-prerender": false,
+      "full-page-listening": false,
+      "mouse-event-element": null,
+      reset: true,
+      gyroscope: true,
+      gyroscopeMinAngleX: -45,
+      gyroscopeMaxAngleX: 45,
+      gyroscopeMinAngleY: -45,
+      gyroscopeMaxAngleY: 45,
+      gyroscopeSamples: 10
+    };
+
+    let newSettings = {};
+    for (var property in defaultSettings) {
+      if (property in settings) {
+        newSettings[property] = settings[property];
+      } else if (this.element.hasAttribute("data-tilt-" + property)) {
+        let attribute = this.element.getAttribute("data-tilt-" + property);
+        try {
+          newSettings[property] = JSON.parse(attribute);
+        } catch (e) {
+          newSettings[property] = attribute;
+        }
+
+      } else {
+        newSettings[property] = defaultSettings[property];
+      }
+    }
+
+    return newSettings;
+  }
+
+  static init(elements, settings) {
+    if (elements instanceof Node) {
+      elements = [elements];
+    }
+
+    if (elements instanceof NodeList) {
+      elements = [].slice.call(elements);
+    }
+
+    if (!(elements instanceof Array)) {
+      return;
+    }
+
+    elements.forEach((element) => {
+      if (!("vanillaTilt" in element)) {
+        element.vanillaTilt = new VanillaTilt(element, settings);
+      }
+    });
+  }
+}
+
+if (typeof document !== "undefined") {
+  /* expose the class to window */
+  window.VanillaTilt = VanillaTilt;
+
+  /**
+   * Auto load
+   */
+  VanillaTilt.init(document.querySelectorAll("[data-tilt]"));
+}
+
+return VanillaTilt;
+
+}());
+
+    </script>
+    <script>
+      VanillaTilt.init(document.querySelector(".card"), {
+		max: 15,
+		speed: 5000
+	});
+    </script>
+  </body>
+  <script>
+    // document.querySelectorAll(".dropdown-toggle").forEach((item) => {
+    //   item.addEventListener("click", (event) => {
+    //     if (event.target.classList.contains("dropdown-toggle")) {
+    //       event.target.classList.toggle("toggle-change");
+    //     } else if (
+    //       event.target.parentElement.classList.contains("dropdown-toggle")
+    //     ) {
+    //       event.target.parentElement.classList.toggle("toggle-change");
+    //     }
+    //   });
+    // });
+
+    // Add active class to the current button (highlight it)
+    var header = document.getElementById("navbarSupportedContent");
+    var btns = header.getElementsByClassName("nav-link");
+    console.log(btns);
+    for (var i = 0; i < btns.length; i++) {
+      console.log(btns[i]);
+      btns[i].addEventListener("click", function () {
+        console.log("😊", event);
+        console.log(
+          `test ======================================================> `
+        );
+
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+      });
+    }
+    console.log(btns);
+  </script>
+</html>
